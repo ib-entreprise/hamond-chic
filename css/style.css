@@ -113,9 +113,10 @@ h6,
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 0;
-    color: rgba(255, 255, 255, .7);
+    color:#fff;
     outline: none;
 }
+ 
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
@@ -134,7 +135,7 @@ h6,
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
-        background: var(--primary);
+        background: var(--dark);
     }
 
     .navbar .navbar-nav .nav-link  {
@@ -262,6 +263,7 @@ h6,
 
 .service-item:hover {
     background: var(--dark);
+    border-radius: 60px;
 }
 
 .service-item .service-icon {
