@@ -66,7 +66,7 @@ const textToType = "Tempor rebum no at dolore lorem clita rebum rebum ipsum rebu
 const autoTypeText = document.getElementById("autoTypeText");
 
 // Vitesse de frappe en millisecondes (ajustez selon vos préférences)
-const typingSpeed = 50; // 50 ms (0.05 seconde) par caractère
+const typingSpeed = 70; // 70 ms (0.07 seconde) par caractère
 
 let charIndex = 0;
 
@@ -80,7 +80,7 @@ function typeText() {
 
 // Commencez à taper le texte après le chargement de la page
 window.addEventListener("load", () => {
-    setTimeout(typeText, 2000); // Attendre 3 secondes avant de commencer la frappe
+    setTimeout(typeText, 1000); // Attendre 3 secondes avant de commencer la frappe
 });
 
     

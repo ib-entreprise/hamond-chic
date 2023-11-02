@@ -574,3 +574,28 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/* **********  boutique ******************** */
+
+.boutique img{
+    border-radius: 15px;        
+    transition: .5s;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.boutique img:hover{
+    opacity: 0.6;    
+    transform: scale(1.1);
+}
+.boutique h6{
+    color: #111;
+}
+.galerie img{
+    border-radius: 3px;
+    transition: .5s;
+    max-width: 100%;
+
+    height: auto;
+    object-fit: cover;
+}
