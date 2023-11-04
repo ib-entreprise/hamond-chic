@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
     // Spinner
@@ -145,3 +146,10 @@ contactForm.addEventListener('submit', (event) => {
   timeInput.value = '';
   messageInput.value = '';
 });
+
+// const allIp = [];
+// $.getJSON("https://api.ipify.org?format=json", function(data) {		
+//         allIp.push(data.ip);
+// 		$("#ipadress").html(allIp + " size"+ allIp.length );            
+// })
+   
