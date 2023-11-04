@@ -585,7 +585,7 @@ h6,
     object-fit: cover;
 }
 .boutique img:hover{
-    opacity: 0.6;    
+    /* opacity: 0.6;     */
     transform: scale(1.1);
 }
 .boutique h6{
@@ -623,10 +623,7 @@ h6,
 }
     
 
-#portfolio img:hover{          
-  border: solid 3px transparent;
-  box-shadow: 50px 50px 50px 50px white;
- border-left: 3px solid red;
- border-bottom: 3px solid yellow;
- border-right: 3px solid green;
+
+.opacity-7{
+    opacity: 0.7;
 }

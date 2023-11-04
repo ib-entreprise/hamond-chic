@@ -60,7 +60,7 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-const textToType = "Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nulla modi, dolorem est fuga illo nemo voluptatibus ab quo, praesentium eligendi recusandae, sed consequuntur doloremque. Unde minima atque nemo sed!";
+const textToType = "je suis la cotach champagne.Dieu donné.la coatch qui a pris le pouvoir sur les resaux sociaux.insiration divine. <em>Kelempe</em> par  ce que pour elle la cest Dieu doné.elle n'est pas dans ohhh ohh. elle n'est pas dans les ahh ahh.elle n'est pas dans les theories. elle est dans la praque.avec elle tu apprends.";
 
 // Élément du paragraphe
 const autoTypeText = document.getElementById("autoTypeText");
