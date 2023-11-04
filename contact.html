@@ -30,6 +30,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
 </head>
 
 <body>
@@ -118,6 +122,7 @@
                 <div class="col-lg-6">
                     <p class="text-center mb-4">Une confirmation contenant le jour et l'heure vous sera envoyee par email.</p>
                     <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <div class="alert"> </div>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -129,14 +134,14 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Votre Prenom</label>
+                                        <label for="email">Votre email</label>
                                     </div>
                                 </div>
                                 <div class="row mt-3 ">
                                     <div class="col-6">
                                         <div class="form-floating">
                                             <input type="date" class="form-control" id="date-picker" placeholder="date-picker"
-                                            min="2018-01-01" max="2018-12-31">
+                                            min="2018-01-01" >
                                             <label for="date-picker">date</label>
                                         </div>
                                     </div>
@@ -162,10 +167,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 fs-5 py-5">
+                    <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Les directs</div>
+                        <h1 class="mb-4"> Planning des directs.</h1>
+                    </div>
                     <table class="table table-responsive table-striped table-light">
                         <thead class="table-dark fs-5">                            
                             <th>Emission</th>
-                            <th>Jour</th>
+                            <th>Jour</th> 
                             <th>Heure</th>
                         </thead>
                         <tbody class="p-3">
@@ -209,17 +218,17 @@
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1>
+                        <h1 class="text-white">Hamond<span class="text-primary">.</span>Chic</h1>
                     </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p class="mb-0">Vous etes dans une situation difficle au sein de votre relation.
+                        Vous ne savez plus comment faire. contactez la coatch.
+                    </p>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <h5 class="text-white mb-4">Me Joindre</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>HamondChic@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -229,20 +238,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
+                    <h5 class="text-white mb-4">Naviguez plus vite</h5>
+                    <a class="btn btn-link" href="index.html">Accueil</a>
+                    <a class="btn btn-link" href="galerie.html">Galerie</a>
+                    <a class="btn btn-link" href="event.html">Evenementiel</a>
+                    <a class="btn btn-link" href="temoignage.html">Temoignages</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Robotic Automation</a>
-                    <a class="btn btn-link" href="">Machine learning</a>
-                    <a class="btn btn-link" href="">Predictive Analysis</a>
-                    <a class="btn btn-link" href="">Data Science</a>
-                    <a class="btn btn-link" href="">Robot Technology</a>
+                    <h5 class="text-white mb-4">Nos Emissions</h5>
+                    <a class="btn btn-link" href="#">Allo, c'est pour posez question</a>
+                    <a class="btn btn-link" href="#">je suis tchiza, sortez moi de la </a>
+                    <a class="btn btn-link" href="#">je suis you-goss, sortez moi de la </a>
+                    <a class="btn btn-link" href="#">Les papotages du week-end</a>                                        
                 </div>
             </div>
         </div>
@@ -250,17 +258,15 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        &copy; <a class="border-bottom" href="#">bah-entreprise</a>, All Right Reserved.                        
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
+                            <h5 class="text-white mb-4">Nos Emissions</h5>
+                            <a class="btn btn-link" href="#">Allo, c'est pour posez question</a>
+                            <a class="btn btn-link" href="#">je suis tchiza, sortez moi de la </a>
+                            <a class="btn btn-link" href="#">je suis you-goss, sortez moi de la </a>
+                            <a class="btn btn-link" href="#">Les papotages du week-end</a>   
                         </div>
                     </div>
                 </div>
@@ -285,6 +291,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- sweet alert --><script src="sweetalert2.min.js"></script>
+  
 </body>
 
 </html>

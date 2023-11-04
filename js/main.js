@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -60,7 +59,7 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-const textToType = "je suis la cotach champagne.Dieu donné.la coatch qui a pris le pouvoir sur les resaux sociaux.insiration divine. <em>Kelempe</em> par  ce que pour elle la cest Dieu doné.elle n'est pas dans ohhh ohh. elle n'est pas dans les ahh ahh.elle n'est pas dans les theories. elle est dans la praque.avec elle tu apprends.";
+const textToType = "je suis la cotach champagne.Dieu donné.la coatch qui a pris le pouvoir sur les resaux sociaux.insiration divine. Kelempe par  ce que pour elle la cest Dieu doné.elle n'est pas dans ohhh ohh. elle n'est pas dans les ahh ahh.elle n'est pas dans les theories. elle est dans la praque.avec elle tu apprends.";
 
 // Élément du paragraphe
 const autoTypeText = document.getElementById("autoTypeText");
@@ -86,3 +85,63 @@ window.addEventListener("load", () => {
     
 })(jQuery);
 
+
+
+// *********** contact form *************
+const contactForm = document.querySelector('form');
+const nameInput = contactForm.querySelector('#name');
+const emailInput = contactForm.querySelector('#email');
+const dateInput = contactForm.querySelector('#date-picker');
+const timeInput = contactForm.querySelector('#time-picker');
+const messageInput = contactForm.querySelector('#message');
+const monAlert = document.querySelector('.alert');
+
+
+contactForm.addEventListener('submit', (event) => {
+  // Empêche le formulaire d'être soumis par défaut.
+  event.preventDefault();
+
+  // Récupère les valeurs des champs du formulaire.
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const date = dateInput.value;
+  const time = timeInput.value;
+  const message = messageInput.value;
+  
+
+
+  if (!name || !email || !date || !time || !message) {
+    // alert('Tous les champs doivent être remplis.!');
+    monAlert.classList.add('alert-danger');
+  monAlert.textContent = "Tous les champs doivent être remplis.!";
+//   alert(monAlert.textContent);
+
+
+    // Swal.fire({
+    //     icon: 'error',
+    //     title: 'Oops...',
+    //     text: 'Tous les champs doivent être remplis.!',
+    //     footer: '<a href="">Why do I have this issue?</a>'
+    //   });
+    return;
+  }
+
+  // Par exemple :
+  monAlert.classList.remove('alert-danger');
+  monAlert.classList.add('alert-success');
+  monAlert.textContent = "Votre message a été envoyé avec succès";
+
+//   Swal.fire({
+//     icon: 'error',
+//     title: 'Oops...',
+//     text: 'Votre message a été envoyé avec succès.!',
+//     // footer: '<a href="">Why do I have this issue?</a>'
+//   })
+
+  // Vide les champs du formulaire.
+  nameInput.value = '';
+  emailInput.value = '';
+  dateInput.value = '';
+  timeInput.value = '';
+  messageInput.value = '';
+});
